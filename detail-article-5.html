@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Article 5 - Detail</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: justify;
+            background: linear-gradient(15deg, rgb(22, 22, 22) 70%, rgb(140, 140, 140));
+            background-size: cover; /* Memastikan background menutupi seluruh area */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            background-attachment: fixed;
+        }
+
+        .nav-item a {
+            position: relative;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+        }
+
+        .nav-item a.active {
+            color: yellow;
+            font-weight: bold;
+        }  
+
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 100%;
+            height: 1.5px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }
+
+        .nav-item a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Andro Review</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12 text-white">
+                <h1>Perbandingan Apple iPhone 15 Plus vs iPhone 15 Pro</h1>
+                <img src="images/farticle5.jpg" class="img-fluid my-4" alt="Article Image">
+                <p>Gadget – Apple kembali menghadirkan dua perangkat flagship terbarunya di tahun 2023, yakni iPhone 15 Plus dan iPhone 15 Pro. Kedua model ini memiliki keunggulan masing-masing, dan meskipun sekilas terlihat serupa, terdapat beberapa perbedaan signifikan. Bagi Anda yang ingin memutuskan antara kedua model ini, perbandingan berikut akan membahas aspek desain, performa, kamera, serta fitur tambahan lainnya yang akan membantu Anda memilih mana yang sesuai dengan kebutuhan.</p>
+                <h5 class="mt-5">Desain dan Material</h5>
+                <p>iPhone 15 Plus: iPhone 15 Plus dirancang dengan bodi yang terbuat dari aluminium, sebuah material yang ringan dan kuat. Bagian depan dan belakang ponsel dilapisi kaca yang tahan terhadap goresan. Pilihan warna yang ditawarkan lebih cerah dan berani seperti biru, merah muda, kuning, dan hijau, yang memberikan tampilan segar dan energik. Bagi pengguna yang mencari smartphone dengan desain ringan, iPhone 15 Plus menjadi pilihan yang tepat.</p>
+                <p>iPhone 15 Pro: Di sisi lain, iPhone 15 Pro memiliki desain yang lebih premium dengan rangka yang terbuat dari titanium. Material ini dikenal lebih kuat dan ringan dibandingkan aluminium, yang memberikan kesan mewah dan tahan lama. Pilihan warna pada model Pro lebih kalem dan elegan, seperti Natural Titanium dan Biru Gelap. Tidak hanya itu, rasio layar ke body sedikit lebih besar dibandingkan Plus, memberikan tampilan yang lebih imersif serta tahan gores yang lebih baik.</p>
+                <h5 class="mt-5">Layar</h5>
+                <p>iPhone 15 Plus: iPhone 15 Plus hadir dengan layar Super Retina XDR berukuran 6,7 inci yang menggunakan panel OLED. Layar ini mendukung refresh rate 60Hz, yang cukup untuk penggunaan sehari-hari, termasuk menonton video, berselancar di internet, atau bermain game ringan. Kecerahan puncak hingga 2.000 nits memungkinkan tampilan tetap jelas di bawah sinar matahari langsung.</p>
+                <p>iPhone 15 Pro: Sementara itu, iPhone 15 Pro juga memiliki ukuran layar yang sama, yakni 6,7 inci, namun dengan dukungan ProMotion Display yang memiliki refresh rate 120Hz. Ini memberikan pengalaman visual yang lebih mulus terutama saat Anda melakukan scrolling atau bermain game. Selain itu, meskipun resolusi layar dan kecerahannya hampir sama dengan versi Plus, iPhone 15 Pro tetap lebih unggul berkat teknologi yang lebih canggih pada layarnya.</p>
+                <h5 class="mt-5">Performa dan Chipset</h5>
+                <p>iPhone 15 Plus: Ditenagai oleh A16 Bionic chip, performa iPhone 15 Plus sudah sangat mumpuni. Chip ini mampu menangani berbagai aplikasi berat dan game dengan lancar. Meskipun performa A16 sudah lebih dari cukup untuk pengguna biasa, namun bagi mereka yang memerlukan perangkat untuk pekerjaan yang lebih berat, chip ini mungkin masih kurang.</p>
+                <p>iPhone 15 Pro: iPhone 15 Pro hadir dengan A17 Pro chip, prosesor terbaru dari Apple yang memberikan peningkatan signifikan pada kecepatan CPU dan GPU. Chip ini mendukung kinerja yang lebih baik dalam aplikasi berbasis AR (Augmented Reality), game berat, serta multitasking. Dengan performa yang lebih baik, iPhone 15 Pro menjadi pilihan ideal bagi para pengguna yang membutuhkan kecepatan dan efisiensi tinggi.f</p>
+                <h5 class="mt-5">Kamera</h5>
+                <p>iPhone 15 Plus: Model ini dilengkapi dengan kamera ganda yang terdiri dari lensa utama 48 MP dan lensa ultra-wide 12 MP. Kamera ini sudah sangat baik untuk mengambil foto berkualitas tinggi dan mendukung perekaman video hingga 4K pada 60fps. Fotografi komputasional membantu meningkatkan hasil foto dalam berbagai kondisi pencahayaan.</p>
+                <p>iPhone 15 Pro: iPhone 15 Pro menawarkan sistem tiga kamera dengan tambahan lensa telefoto 12 MP yang mendukung optical zoom hingga 3x. Kamera utamanya tetap 48 MP, tetapi dilengkapi dengan LiDAR scanner, yang sangat berguna untuk fotografi di kondisi cahaya rendah. ProRes video recording juga memungkinkan perekaman video dengan kualitas profesional, menjadikan iPhone 15 Pro sebagai pilihan terbaik bagi pengguna yang mengutamakan kualitas kamera.</p>
+                <h5 class="mt-5">Baterai dan Pengisian Daya</h5>
+                <p>iPhone 15 Plus: iPhone 15 Plus menawarkan baterai yang cukup besar, dengan daya tahan hingga 26 jam pemutaran video. Fitur pengisian cepat memungkinkan baterai terisi 50% dalam 30 menit dengan adaptor 20W. Selain itu, perangkat ini mendukung pengisian nirkabel menggunakan MagSafe.</p>
+                <p>iPhone 15 Pro: Baterai pada iPhone 15 Pro mungkin sedikit lebih kecil, namun efisiensi chip A17 Pro memberikan manajemen daya yang lebih baik, sehingga daya tahan baterai tetap optimal. Selain itu, iPhone 15 Pro juga mendukung pengisian cepat dan nirkabel, dengan tambahan fitur untuk transfer data yang lebih cepat menggunakan USB-C.</p>
+                <h5 class="mt-5">Fitur Tambahan</h5>
+                <p>iPhone 15 Plus: Dilengkapi dengan port USB-C, iPhone 15 Plus akhirnya mengikuti standar pengisian daya universal. Selain itu, perangkat ini memiliki sertifikasi IP68, yang artinya tahan air dan debu, serta tetap dilengkapi Face ID untuk keamanan.</p>
+                <p>iPhone 15 Pro: Di samping port USB-C yang mendukung transfer data lebih cepat, iPhone 15 Pro dilengkapi dengan Action Button. Tombol ini memungkinkan pengguna untuk mengatur fungsi khusus, seperti membuka kamera atau memulai perekaman dengan satu sentuhan. Fitur ini menggantikan tombol silent tradisional dan memberikan fleksibilitas lebih kepada pengguna.f</p>
+                <h5 class="mt-5">Harga</h5>
+                <p>iPhone 15 Plus: Model ini hadir dengan harga yang lebih terjangkau, yakni mulai dari $899. iPhone 15 Plus menjadi pilihan yang lebih ekonomis bagi pengguna yang menginginkan ponsel dengan performa tinggi tanpa harus mengeluarkan biaya besar.</p>
+                <p>iPhone 15 Pro: Di sisi lain, iPhone 15 Pro memiliki harga yang lebih tinggi, mulai dari $1,099. Meskipun lebih mahal, fitur premium yang ditawarkan seperti desain titanium, chipset A17 Pro, dan kamera yang lebih canggih menjadikannya nilai tambah bagi pengguna yang menginginkan performa terbaik.</p>
+                <p>Pada akhirnya, iPhone 15 Plus adalah pilihan ideal bagi pengguna yang mencari ponsel dengan layar besar, performa solid, dan harga lebih terjangkau. Sementara itu, iPhone 15 Pro lebih cocok untuk mereka yang menginginkan fitur premium, performa chipset yang lebih cepat, serta sistem kamera yang lebih canggih. Pilihan ini bergantung pada kebutuhan masing-masing pengguna—apakah Anda memprioritaskan harga atau fitur canggih dan performa yang maksimal?</p>
+                <p>Sumber : gadget.viva.co.id</p>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>

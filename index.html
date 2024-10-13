@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Andro Review</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Samsung">Samsung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Xiaomi">Xiaomi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Vivo">Vivo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Iphone">Iphone</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search bar -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="input-group mb-3">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Cari Smartphone" aria-label="Search for articles">
+                    <button class="btn btn-primary" type="button" onclick="searchArticle()">Search</button>
+                    <button class="btn btn-secondary" type="button" onclick="resetSearch()">Show All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles Section -->
+        <!-- Horizontal Scrollable Articles Section -->
+        <div class="container my-5">
+            <h2>Artikel Terkait</h2>
+            <div class="scroll-container position-relative">
+                <button class="btn btn-secondary position-absolute" id="scrollLeft" style="left: 10px; z-index: 10;" onclick="scrollArticles(-1)"><</button>
+                <button class="btn btn-secondary position-absolute" id="scrollRight" style="right: 10px; z-index: 10;" onclick="scrollArticles(1)">></button>
+                <!-- Articles Wrapper -->
+                <div class="row flex-row flex-nowrap overflow-auto" id="scrollableArticles">
+                    <!-- Scrollable Article 1 -->
+                    <div class="col-md-4 mb-4 sarticle" data-title="Featured Article 1">
+                        <a href="detail-article1.html" class="card">
+                            <img src="images/farticle1.jpg" class="card-img-top" alt="Article Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Xiaomi 14T Pro vs Redmi K70 Ultra, Ternyata Banyak Spek Sama</h5>
+                                <p class="card-text short-text">Xiaomi 14T Pro dan Redmi K70 Ultra dikatakan smartphone kembar karena punya desain dan mayoritas spesifikasi yang sama.</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- Scrollable Article 2 -->
+                    <div class="col-md-4 mb-4 sarticle" data-title="Featured Article 2">
+                        <a href="detail-article2.html" class="card">
+                            <img src="images/farticle2.jpg" class="card-img-top" alt="Article Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Samsung Galaxy S25 FE Dilengkapi MediaTek Dimensity 9400</h5>
+                                <p class="card-text short-text">Samsung Galaxy S25 FE hadir dengan MediaTek Dimensity 9400, menawarkan performa tinggi dan dukungan AI canggih dengan harga terjangkau.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 mb-4 sarticle" data-title="Featured Article 2">
+                        <a href="detail-article3.html" class="card">
+                            <img src="images/farticle3.jpeg" class="card-img-top" alt="Article Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Performa GPU Snapdragon 8 Gen 4 Lebih Baik 56% Dari Generasi Sebelumnya</h5>
+                                <p class="card-text short-text">Jelang pengumuman resminya, sudah terdapat berbagai bocoran yang menyebutkan peningkatan performa yang dimiliki oleh Snapdragon 8 Gen 4.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 mb-4 sarticle" data-title="Featured Article 2">
+                        <a href="detail-article4.html" class="card">
+                            <img src="images/farticle4.jpg" class="card-img-top" alt="Article Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Review vivo X100: Flagship Paling Murah vivo dengan Lensa Zeiss</h5>
+                                <p class="card-text short-text">Vivo X100 merupakan salah satu flagship vivo yang meluncur di Indonesia di tahun 2024, berbarengan dengan vivo X Fold 3 Pro dan vivo X100...</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- Scrollable Article 3 -->
+                    <div class="col-md-4 mb-4 sarticle" data-title="Featured Article 3">
+                        <a href="detail-article-5.html" class="card">
+                            <img src="images/farticle5.jpg" class="card-img-top" alt="Article Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Perbandingan Apple iPhone 15 Plus vs iPhone 15 Pro</h5>
+                                <p class="card-text short-text">Apple kembali menghadirkan dua perangkat flagship terbarunya di tahun 2023, yakni iPhone 15 Plus dan iPhone 15 Pro.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+
+    <div class="container">
+        <div class="row" id="articleContainer">
+            <h1 class="text-center text-white">Smartphone Midrange - Flagship Terbaik Tahun 2024 Versi Mimin</h1>
+            <h2 id="Samsung" class="brand mt-4" data-brand="Samsung">Samsung</h2>
+            <!-- Article 1 -->
+            <div class="col-md-4 mb-4 article" data-title="Samsung S24 Ultra" data-brand="Samsung">
+                <div class="card">
+                    <img src="images/article1.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung S24 Ultra</h5>
+                        <p class="card-text short-text">Samsung Galaxy S24 Ultra, menyematkan layar Dynamic LTPO AMOLED 2X berukuran 6.8 inci memberikan pengalaman visual luar biasa dengan refresh rate 120Hz dan HDR10+.</p>
+                        <p class="card-text full-text d-none">Samsung Galaxy S24 Ultra, menyematkan layar Dynamic LTPO AMOLED 2X berukuran 6.8 inci memberikan pengalaman visual luar biasa dengan refresh rate 120Hz dan HDR10+. Sementara itu, kamera belakangnya, dengan sensor 200MP wide, 50MP periscope telephoto, 10MP telephoto, dan 12MP ultrawide. Samsung juga menyematkan fitur ProVisual Engine, termasuk fitur seperti Nightography, Zoom Optik 10x, dan AI Zoom 100x. Sementara itu kamera selfienya menggunakan sensor 12MP. Performa tinggi didukung oleh chipset Snapdragon 8 Gen 3, memberikan pengalaman gaming yang superior. Baterai 5,000 mAh dengan fitur pengisian daya canggih seperti pengisian kabel 45W dan pengisian nirkabel 15W, menjadikan Galaxy S24 Ultra sebagai pilihan utama bagi mereka yang menginginkan kombinasi unggul dari desain, fotografi, dan performa tinggi dalam satu perangkat terutama dengan adanya fitur terbaru yaitu Galaxy AI. Harga Samsung S24 Ultra mulai dari Rp21,9 jutaan</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-md-4 mb-4 article" data-title="Samsung Galaxy Fold 5" data-brand="Samsung">
+                <div class="card">
+                    <img src="images/article2.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy Fold 5</h5>
+                        <p class="card-text short-text">Galaxy Z Fold 5 menawarkan desain yang lebih ramping dengan penggunaan Flex hinge baru yang membuatnya dapat dilipat sepenuhnya tanpa celah di antara dua bagian. </p>
+                        <p class="card-text full-text d-none">Galaxy Z Fold 5 menawarkan desain yang lebih ramping dengan penggunaan Flex hinge baru yang membuatnya dapat dilipat sepenuhnya tanpa celah di antara dua bagian. Menggunakan layar Dynamic AMOLED 2X, 7.6-inch, (2,176 x 1,812 pixels), 1-120Hz, dan Cover: 6.2 inches, 2316 x 904 pixels, Dynamic AMOLED, 120Hz refresh rate, Scratch-resistant glass (Corning Gorilla Glass Victus 2). Tentu saja penawaran layar yang diberikan cukup imersif. Sementara itu, untuk Kamera utama 50MP, ultrawide 12MP, dan telefoto 10MP dengan zoom optik 3x. Dalam pengujian, zoom 3x pada Fold 5 memberikan detail yang lebih tajam dan warna yang lebih alami. Kamera depannya masih menggunakan sensor 10MP. Dapur pacunya menggunakan Snapdragon 8 Gen 2 for Galaxy, versi terbaru dari hardware Qualcomm yang memiliki kecepatan clock yang lebih tinggi. Kapasitas baterainya 4.400 mAh yang masih sama dengan Z Fold 4. Harga Samsung Galaxy Fold 5 mulai dari Rp24,9 jutaan</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 article" data-title="Samsung Galaxy Flip 5" data-brand="Samsung">
+                <div class="card">
+                    <img src="images/article3.png" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy Flip 5</h5>
+                        <p class="card-text short-text">Galaxy Z Flip 5 hadir dengan layar penutup yang lebih besar. Menggunakan panel Foldable Dynamic AMOLED 2X, 6.7 inches, 1080 x 2640 pixels, 120Hz, HDR10+ </p>
+                        <p class="card-text full-text d-none">Galaxy Z Flip 5 hadir dengan layar penutup yang lebih besar. Menggunakan panel Foldable Dynamic AMOLED 2X, 6.7 inches, 1080 x 2640 pixels, 120Hz, HDR10+ dengan Cover display: Super AMOLED, 3.4 inches, 720 x 748 pixels dan (Gorilla Glass Victus 2). Kamera utama 12 megapiksel f/1.8  (wide) dan kamera ultrawide angle 12 megapiksel f/2.2 yang memiliki perbaikan dalam kualitas foto dengan bantuan AI-powered untuk mengoptimalkan foto. Kamera depannya juga menggunakan sensor 10MP saja. Chipsetnya sama seperti Fold 5 yaitu menggunakan Snapdragon 8 Gen 2 dari Qualcomm. Sudah menggunakan sistem operasi Android 13 dan segera akan mendapatkan pembaruan resmi ke Android 14 setelah diluncurkan. Samsung memberikan pembaruan sistem operasi hingga Android 17. Masih menggunakan baterai berkapasitas 3.700mAh dengan dukungan pengisian daya kabel 25W dan pengisian daya nirkabel 10W. Harga Samsung Galaxy Flip 5 mulai dari Rp15,9 jutaan</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="Xiaomi" class="brand mt-5" data-brand="Xiaomi">Xiaomi</h2>
+            <div class="col-md-4 mb-4 article" data-title="Xiaomi Mix Flip" data-brand="Xiaomi">
+                <div class="card">
+                    <img src="images/article4.webp" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Xiaomi Mix Flip</h5>
+                        <p class="card-text short-text">Xiaomi MIX Flip yang diluncurkan pada tahun 2024 adalah smartphone lipat premium dengan fitur canggih, antara lain:</p>
+                        <p class="card-text full-text d-none">Xiaomi MIX Flip yang diluncurkan pada tahun 2024 adalah smartphone lipat premium dengan fitur canggih, antara lain:
+
+                            Layar: Memiliki layar lipat AMOLED 6,86 inci dengan resolusi 1,5K dan refresh rate 120Hz. Terdapat juga layar sekunder berukuran 4 inci, memberikan visual yang cerah dan scrolling yang mulus.
+                            Prosesor: Ditenagai oleh Qualcomm Snapdragon 8 Gen 3, perangkat ini menawarkan performa tinggi, cocok untuk multitasking berat dan gaming.
+                            Memori & Penyimpanan: Tersedia dalam pilihan RAM 12GB atau 16GB, dengan opsi penyimpanan mulai dari 256GB hingga 1TB.
+                            Kamera: Memiliki pengaturan kamera belakang ganda 50MP, termasuk lensa telefoto, dan kamera depan 32MP. Dukungannya untuk merekam video 8K juga menjadi nilai tambah.
+                            Baterai: Mengusung baterai 4780mAh dengan pengisian cepat 67W.
+                            Sistem Operasi: Dijalankan dengan HyperOS dari Xiaomi yang berbasis Android 14.
+                            Dari segi harga, Xiaomi MIX Flip diperkirakan mulai dari Rp 13,3 juta untuk varian 12GB/256GB, dan varian tertinggi bisa mencapai Rp 16,1 juta untuk model 16GB/1TB</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 article" data-title="Xiaomi 13 Ultra" data-brand="Xiaomi">
+                <div class="card">
+                    <img src="images/article5.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Xiaomi 13 Ultra</h5>
+                        <p class="card-text short-text">Xiaomi 13 Ultra memiliki desain kokoh dengan bingkai alumunium dan bahan eco leather yang nyaman di tangan.</p>
+                        <p class="card-text full-text d-none">Xiaomi 13 Ultra memiliki desain kokoh dengan bingkai alumunium dan bahan eco leather yang nyaman di tangan. Layarnya adalah AMOLED dengan refresh rate 120 Hz, dukungan Dolby Vision, HDR10+, dan tingkat kecerahan yang tinggi.
+
+                            Performanya sangat baik berkat prosesor Snapdragon 8 Gen 2, menjadikannya cepat dalam pengujian benchmark dan menjelajah di browser. Kamera-kamera pada ponsel ini termasuk kamera depan 32 MP dan empat kamera utama dengan resolusi 50 MP, termasuk kamera telefoto dan ultra wide. Baterainya berkapasitas 5000 mAh dan mendukung fast charging 90W serta wireless charging 50W.
+                            Harga Xiaomi 13 Ultra mulai dari Rp13 jutaan</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="col-md-4 mb-4 article" data-title="Xiaomi 14T Pro" data-brand="Xiaomi">
+                <div class="card">
+                    <img src="images/article6.webp" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Xiaomi 14T Pro</h5>
+                        <p class="card-text short-text">Xiaomi 14T Pro hadir sebagai ponsel flagship yang tangguh, dilengkapi dengan chipset MediaTek Dimensity 9300+</p>
+                        <p class="card-text full-text d-none">Xiaomi 14T Pro hadir sebagai ponsel flagship yang tangguh, dilengkapi dengan chipset MediaTek Dimensity 9300+ berbasis arsitektur 4nm, menawarkan kinerja luar biasa untuk gaming, multitasking, dan pembuatan konten. Ponsel ini memiliki RAM hingga 12GB LPDDR5X dan penyimpanan internal UFS 4.0 yang dapat mencapai 1TB, memberikan pengalaman yang cepat dan ruang yang luas untuk aplikasi serta media. Layarnya AMOLED 6,67 inci dengan resolusi QHD (1220 x 2712 piksel) dan refresh rate 144Hz, cocok untuk tampilan yang halus dan tajam​. Untuk fotografi, Xiaomi 14T Pro dibekali kamera utama 50MP dengan teknologi Light Fusion 900 dari Xiaomi, kamera ultra-wide 50MP, dan lensa telefoto 12MP dengan zoom optik 2,6x. Kamera ini bekerja sama dengan Leica untuk menghasilkan kualitas foto yang detail dan kaya warna, baik di kondisi terang maupun rendah cahaya​. Di Indonesia, harga Xiaomi 14T Pro diperkirakan sekitar Rp 9-10 juta, bergantung pada konfigurasi RAM dan penyimpanannya</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="Vivo" class="brand mt-5" data-brand="Vivo">Vivo</h2>
+            <div class="col-md-4 mb-4 article" data-title="Vivo X100 Pro" data-brand="Vivo">
+                <div class="card">
+                    <img src="images/article7.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Vivo X100 Pro</h5>
+                        <p class="card-text short-text">Vivo X100 Pro memiliki spesifikasi yang cukup impresif, terutama di kelas flagship. Ponsel ini dilengkapi dengan layar OLED 6,78 inci</p>
+                        <p class="card-text full-text d-none">Vivo X100 Pro memiliki spesifikasi yang cukup impresif, terutama di kelas flagship. Ponsel ini dilengkapi dengan layar OLED 6,78 inci beresolusi WQHD+ (1260 x 2800 piksel) dengan refresh rate 120Hz dan kecerahan puncak hingga 3000 nits, memberikan pengalaman visual yang sangat tajam dan jernih.
+
+                            Untuk performanya, Vivo X100 Pro didukung oleh chipset MediaTek Dimensity 9300 dengan fabrikasi 4nm dan GPU Immortalis-G720 MC12. Ponsel ini dilengkapi RAM 16GB LPDDR5X dan penyimpanan internal hingga 512GB dengan teknologi UFS 4.0, namun tanpa slot ekspansi memori tambahan.
+                            
+                            Sektor kamera sangat mumpuni dengan setup tiga kamera belakang: kamera utama 50 MP (sensor IMX989), kamera ultra-wide 50 MP, dan kamera telefoto 50 MP, serta kemampuan merekam video hingga 8K. Di bagian depan terdapat kamera 32 MP untuk selfie. Ponsel ini juga mendukung fitur fotografi malam dan mode SuperMoon.
+                            
+                            Baterainya berkapasitas 5400 mAh, mendukung pengisian cepat 100W yang dapat mengisi hingga 50% dalam 14 menit. Ponsel ini juga mendukung pengisian nirkabel.
+                            
+                            Harga Vivo X100 Pro di pasar internasional sekitar USD 826, yang bila dikonversi ke rupiah berkisar di angka Rp12,5 juta hingga Rp13 juta, tergantung varian memori dan wilayah</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 article" data-title="Vivo V40" data-brand="Vivo">
+                <div class="card">
+                    <img src="images/article8.webp" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Vivo V40</h5>
+                        <p class="card-text short-text">Vivo V40 5G adalah smartphone premium yang menawarkan berbagai fitur canggih, termasuk kamera berkualitas tinggi yang dikembangkan bersama ZEISS.</p>
+                        <p class="card-text full-text d-none">Vivo V40 5G adalah smartphone premium yang menawarkan berbagai fitur canggih, termasuk kamera berkualitas tinggi yang dikembangkan bersama ZEISS. Ponsel ini dilengkapi dengan layar AMOLED 6,78 inci beresolusi 2800 x 1260 piksel dan refresh rate 120 Hz, yang membuat tampilan visualnya sangat halus dan nyaman untuk digunakan, baik untuk aktivitas sehari-hari maupun gaming​
+                            . Di dalamnya terdapat chipset Qualcomm Snapdragon 7 Gen 3, serta pilihan RAM 8GB atau 12GB, dan penyimpanan internal mulai dari 256GB hingga 512GB tanpa dukungan slot microSD​
+                            .
+                            
+                            Dari segi daya, Vivo V40 memiliki baterai berkapasitas 5500 mAh yang mendukung teknologi pengisian cepat 80W, memungkinkan pengisian penuh dalam waktu sekitar 43 menit​
+
+                            . Selain itu, ponsel ini juga memiliki sertifikasi IP68/IP69, menjadikannya tahan air dan debu​
+
+                            . Dalam hal harga, Vivo V40 5G dibanderol mulai dari Rp 6.499.000 untuk varian RAM 8GB dan ROM 256GB, sedangkan untuk varian RAM 12GB dan ROM 512GB harganya mencapai Rp 7.999.000​.</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 article" data-title="Vivo X100" data-brand="Vivo">
+                <div class="card">
+                    <img src="images/article9.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Vivo X100</h5>
+                        <p class="card-text short-text">Vivo X100 adalah smartphone terbaru dari Vivo yang dirilis pada November 2023. Ponsel ini mengusung layar AMOLED 6,78 inci</p>
+                        <p class="card-text full-text d-none">Vivo X100 adalah smartphone terbaru dari Vivo yang dirilis pada November 2023. Ponsel ini mengusung layar AMOLED 6,78 inci dengan resolusi 1260 x 2800 piksel dan refresh rate 120 Hz. Ditenagai oleh chipset MediaTek Dimensity 9300, Vivo X100 menawarkan performa yang kuat dengan CPU octa-core dan GPU Immortalis-G720 MC12. Ponsel ini hadir dengan RAM 12 GB dan penyimpanan internal 512 GB, tetapi tidak mendukung memori eksternal.
+
+                            Kamera menjadi salah satu keunggulan Vivo X100, dengan konfigurasi kamera belakang tiga lensa, termasuk 50 MP untuk wide, 50 MP ultrawide, dan 64 MP untuk periscope telephoto, yang mendukung zoom optik 3x. Sementara itu, kamera depannya memiliki resolusi 32 MP. Ponsel ini juga mendukung konektivitas 5G dan dilengkapi dengan baterai 5000 mAh yang mendukung pengisian cepat 120W, yang dapat mengisi 50% baterai dalam waktu sekitar 11 menit.
+                            
+                            Di Indonesia, harga Vivo X100 dengan konfigurasi RAM 12 GB dan penyimpanan 512 GB dipatok sekitar Rp 10.821.000​
+                            . Ponsel ini tersedia dalam beberapa pilihan warna, yaitu biru, putih, hitam, dan oranye​
+                            .</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="Iphone" class="brand mt-5" data-brand="Iphone">iPhone</h2>
+            <div id="Iphone" class="col-md-4 mb-4 article" data-title="Iphone 15 Pro Max" data-brand="Iphone">
+                <div class="card">
+                    <img src="images/article10.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 15 Pro Max</h5>
+                        <p class="card-text short-text">iPhone 15 Pro Max adalah ponsel terbaru dengan desain ringan berbahan titanium, layar OLED Super Retina XDR 6.7 inci </p>
+                        <p class="card-text full-text d-none">iPhone 15 Pro Max adalah ponsel terbaru dengan desain ringan berbahan titanium, layar OLED Super Retina XDR 6.7 inci dengan refresh rate 120 Hz, dan konektor USB-C. Kamera utamanya memiliki resolusi 48MP dengan kemampuan zoom optik 5x dan rekaman video ProRes. 
+
+                            Ditenagai oleh Chip A17 Pro dengan fabrikasi 3nm, ponsel ini memiliki kinerja yang kuat dan hemat energi. Kapasitas baterainya sekitar 4.323 mAh dengan pengisian 20 W melalui kabel dan 15 W dengan MagSafe. iPhone 15 Pro Max juga mendukung pengisian nirkabel Qi2 dengan daya tahan baterai hingga 29 jam pemutaran video.
+                            
+                            Harga iPhone 15 Pro Max mulai dari Rp18,5 jutaan</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 article" data-title="Iphone 14 Pro Max" data-brand="Iphone">
+                <div class="card">
+                    <img src="images/article11.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 14 Pro Max</h5>
+                        <p class="card-text short-text">iPhone terbaru tahun 2022 yang masuk dalam rekomendasi HP Oktober 2022. Menggunakan OLED Display 6,7 super retina, 2796 x 1290 piksel</p>
+                        <p class="card-text full-text d-none">iPhone terbaru yang baru saja dirilis ini telah ditunggu-tunggu oleh banyak orang. Masuk dalam rekomendasi HP Oktober 2022. Menggunakan OLED Display 6,7 super retina, 2796 x 1290 piksel dan desainnya memiliki display notch yang memiliki banyak widget di dalamnya. Sistem operasinya sudah menggunakan iOS 16 dengan chipset terbaru Apple A16 Bionic dengan penyimpanan 128GB/256GB/512GB/1TB. 
+
+                            Untuk kameranya, iPhone 14 Pro Max menggunakan sensor kamera yang jauh lebih tinggi dibandingkan generasi sebelumnya yaitu 48MP (wide), 12MP (ultrawide), dan 12MP (telephoto). Kamera depannya memiliki resolusi 12MP. Keunggulan utamanya ada pada fitur Night Portraits, ProRaw, dan macro. Seri satu ini sudah dilengkapi dengan LiDAR scanner.
+                            
+                            Harga iPhone 14 Pro Max mulai dari Rp25,9 jutaan.</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 article" data-title="Iphone 16 Pro Max" data-brand="Iphone">
+                <div class="card">
+                    <img src="images/article12.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 16 Pro Max</h5>
+                        <p class="card-text short-text">iPhone 16 Pro Max hadir dengan spesifikasi unggulan, termasuk layar OLED Super Retina XDR berukuran 6,9 inci </p>
+                        <p class="card-text full-text d-none">iPhone 16 Pro Max hadir dengan spesifikasi unggulan, termasuk layar OLED Super Retina XDR berukuran 6,9 inci dengan resolusi 2868 x 1320 piksel. Ditenagai oleh chipset Apple A18 Pro, ponsel ini menawarkan performa yang sangat cepat. Sistem kameranya mencakup tiga lensa belakang: 48 MP untuk wide, 48 MP untuk ultrawide, dan 12 MP telephoto dengan zoom optik 5x, serta kamera depan 12 MP. Baterai 4685 mAh mendukung pengisian cepat dan pengisian nirkabel.
+
+                            Di Indonesia, harga iPhone 16 Pro Max diperkirakan mulai dari sekitar IDR 21.599.000 untuk model 512 GB dan IDR 24.699.000 untuk model 1 TB</p>
+                        <button class="btn btn-dark" onclick="toggleReadMore(this)">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-5 p-4 bg-dark text-white text-end footer-contact">
+        <div class="contact-item">
+          <span class="icon"><i class="fa-solid fa-phone"></i></span>
+          <label>Rynofaldi Damario Dzaki</label>
+        </div>
+        <div class="contact-item">
+          <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+          <label>5025231042</label>
+        </div>
+      </div>
+    
+    <script src="bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // Function to search articles
+        function searchArticle() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const articles = document.querySelectorAll('.article');
+            const brands = new Set(); // Set to store unique brands for display
+
+            articles.forEach(article => {
+                const title = article.getAttribute('data-title').toLowerCase();
+                const brand = article.getAttribute('data-brand');
+
+                if (title.includes(input)) {
+                    article.style.display = ''; // Show article
+                    brands.add(brand); // Add brand to the set
+                } else {
+                    article.style.display = 'none'; // Hide article
+                }
+            });
+
+            // Display the brands for matched articles
+            const brandContainer = document.getElementById('articleContainer');
+            brandContainer.querySelectorAll('.brand').forEach(brandElem => {
+                if (brands.has(brandElem.getAttribute('data-brand'))) {
+                    brandElem.style.display = ''; // Show brand
+                } else {
+                    brandElem.style.display = 'none'; // Hide brand
+                }
+            });
+        }
+
+        // Function to reset search and show all articles
+        function resetSearch() {
+            const articles = document.querySelectorAll('.article');
+            const brandHeaders = document.querySelectorAll('.brand');
+            
+            document.getElementById('searchInput').value = ''; // Clear search input
+            articles.forEach(article => {
+                article.style.display = ''; // Show all articles
+            });
+            
+            brandHeaders.forEach(header => {
+                header.style.display = ''; // Show all brand headers
+            });
+        }
+
+        // Function to toggle between short and full text
+        function toggleReadMore(button) {
+            const cardBody = button.parentElement;
+            const shortText = cardBody.querySelector('.short-text');
+            const fullText = cardBody.querySelector('.full-text');
+
+            if (fullText.classList.contains('d-none')) {
+                fullText.classList.remove('d-none');
+                shortText.classList.add('d-none');
+                button.textContent = 'Read less';
+            } else {
+                fullText.classList.add('d-none');
+                shortText.classList.remove('d-none');
+                button.textContent = 'Read more';
+            }
+        }
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                // Smooth scroll to the target
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+
+                // Highlight the active nav-link
+                document.querySelectorAll('.nav-link').forEach(nav => {
+                    nav.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        function scrollRight() {
+            const scrollContainer = document.getElementById('scrollableArticles');
+            const scrollAmount = scrollContainer.scrollWidth / scrollContainer.childElementCount;
+            scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+
+        // Function to scroll articles to the left
+        function scrollLeft() {
+            const scrollContainer = document.getElementById('scrollableArticles');
+            const scrollAmount = scrollContainer.scrollWidth / scrollContainer.childElementCount;
+            scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        }
+
+        // Add event listeners to buttons
+        document.getElementById('scrollRight').addEventListener('click', scrollRight);
+        document.getElementById('scrollLeft').addEventListener('click', scrollLeft);
+    </script>
+</body>
+
+</html>

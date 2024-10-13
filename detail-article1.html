@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Article 1 - Detail</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background: linear-gradient(15deg, rgb(22, 22, 22) 70%, rgb(140, 140, 140));
+            background-size: cover; /* Memastikan background menutupi seluruh area */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: fit-content;
+            height: 100%;
+            width: 100%;
+            background-attachment: fixed;
+        }
+
+        .nav-item a {
+            position: relative;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+        }
+
+        .nav-item a.active {
+            color: yellow;
+            font-weight: bold;
+        }  
+
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 100%;
+            height: 1.5px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }
+
+        .nav-item a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Andro Review</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12 text-white">
+                <h1>Xiaomi 14T Pro vs Redmi K70 Ultra, Ternyata Ada Banyak Spek yang Sama!</h1>
+                <img src="images/farticle1.jpg" class="img-fluid my-4" alt="Article Image">
+                <p>Xiaomi 14T Pro resmi meluncur bersamaan denga Xiaomi 14T untuk pasar global pada September 2024. Tanpa disadari, Xiaomi 14T Pro adalah kembaran dari Redmi K70 Ultra yang rilis pada Juli 2024. Redmi K series sendiri dipersiapkan Xiaomi khusus untuk pasar China.</p>
+                <p>Xiaomi 14T Pro dan Redmi K70 Ultra dikatakan smartphone kembar karena punya desain dan mayoritas spesifikasi yang sama. Lalu, apa saja yang membedakan kedua smartphone Xiaomi ini? komparasi Xiaomi 14T Pro dan Redmi K70 Ultra di bawah ini akan memberikan jawabannya.</p>
+                <h5 class="mt-5">1. Performa setara, tapi Redmi K70 Ultra punya opsi RAM lebih besar</h5>
+                <p>Dari sektor performa, Xiaomi 14T Pro dan Redmi K70 Ultra diperkuat prosesor yang sama, yakni Dimensity 9300+. Ini adalah prosesor MediaTek berfabrikasi 4 nm yang rilis pada Mei 2024. Ia memiliki satu Cortex-X4@3,4GHz, tiga Cortex-X4@2,85GHz, dan empat Cortex-A720@2,0GHz serta pengolah grafik Immortalis-G720 MC12. Tiap smartphone hadir dalam beberapa varian dengan rincian konfigurasi RAM dan memori internal sebagai berikut:</p>
+                <li>Xiaomi 14T Pro: 12/256GB, 12/512GB, 12GB/1TB</li>
+                <li>Redmi K70 Ultra: 12/256GB, 12/512GB, 16/512GB, 16GB/1TB.</li>
+                <h5 class="mt-5">2. Sama-sama punya layar 144Hz, speaker stereo, dan banyak lagi</h5>
+                <p>Kedua smartphone yang sama-sama bersertifikasi IP68 ini (kedap debu dan air) memiliki tampilan eksterior yang sama. Di sisi depan, ada punch hole di tengah atas layar berpanel AMOLED dengan bentang 6,67 inci, resolusi 1220 x 2712 piksel (1,5K), refresh rate 144Hz, dan kecerahan puncak 4000 nit. Baik Xiaomi 14T Pro maupun Redmi K70 Ultra juga punya speaker stereo, terdiri dari speaker utama di bingkai sisi bawah dan speaker sekunder di earpiece. Beberapa persamaan lainnya ialah pemindai sidik jari dalam layar, dua mikrofon, soket USB Type C, dua slot kartu SIM, pemancar inframerah, dan HyperOS berbasis Android 14.</p>
+                <h5 class="mt-5">3. Xiaomi 14T Pro punya kamera depan dan belakang lebih unggul</h5>
+                <p>Meski terlihat sama, keduanya ternyata punya perbedaan di aspek fotografi. Xiaomi 14T Pro punya kamera swafoto 32MP. Resolusinya lebih tinggi dari kamera swafoto 20MP milik Redmi K70 Ultra. Di sisi belakang, keduanya punya modul dengan bentuk yang berbeda, yaitu persegi (Xiaomi 14T Pro) atau persegi panjang (Redmi K70 Ultra). Meski bentuknya berbeda, modul keduanya memuat LED flash dan tiga kamera. Nah, kamera Xiaomi 14T Pro lebih mumpuni karena punya kamera ultrawide dengan resolusi lebih tinggi dan kamera telefoto. Untuk lebih jelasnya, di bawah ini adalah perbandingann spek kamera belakang Xiaomi 14T Pro dan Redmi K70 Ultra:</p>
+                <h5>Xiaomi 14T Pro</h5>
+                <li>Kamera utama: 50MP, sensor Light Fusion 900, f/1.62, OIS</li>
+                <li>Kamera ultrawide: 12MP, f/2.2</li>
+                <li>Kamera telefoto: 50MP, f/1.98</li>
+                <h5 class="mt-5">Redmi K70 Ultra</h5>
+                <li>Kamera utama: 50MP, sensor Sony IMX906, f/1.6, OIS</li>
+                <li>Kamera ultrawide: 8MP, f/2.2.</li>
+                <li>Kamera makro: 2MP, f/2.4</li>
+                <h5 class="mt-5">4. Baterai Xiaomi 14T Pro lebih kecil, tapi dukung pengisian daya nirkabel.</h5>
+                <p>Nah, Xiaomi 14T Pro dan Redmi K70 Ultra ditenagai baterai dengan kapasitas yang berbeda. Baterai Xiaomi 14T Pro berkapasitas 5000 mAh, sedikit lebih kecil dari baterai 5500 mAh milik Redmi K70 Ultra. Meski begitu, baterai kedua smartphone Xiaomi ini sama-sama mendukung pengisian daya 120W. Menariknya, meski kapasitas baterainya lebih kecil, justru Xiaomi 14T Pro mendukung pengisian daya nirkabel 50W.</p>
+                <h5 class="mt-5">5. Unit pasar internasional punya spek lebih unggul dari unit pasar China</h5>
+                <p>Terkait warna, Xiaomi 14T Pro tersedia dalam pilihan titan black, titan gray, dan titan blue. Sementara itu, Redmi K70 Ultra tersedia dalam pilihan black, snow white, dan ice blue. Untuk harga, akan dipatok harga yang berlaku di Eropa untuk Xiaomi 14T Pro atau di China untuk Redmi K70 Ultra dengan rincian sebagai berikut:</p>
+                <h5>Xiaomi 14T Pro</h5>
+                <li>Varian 12/256GB: 799,99 euro (sekitar Rp13,7 juta)</li>
+                <li>Varian 12/512GB: 899,99 euro (sekitar Rp15,4 juta)</li>
+                <li>Varian 12GB/1TB: 999,99 euro (sekitar Rp17,1 juta)</li>
+                <h5 class="mt-5">Redmi K70 Ultra</h5>
+                <li>Varian 12/256GB: 2.599 yuan (sekitar Rp5,7 juta)</li>
+                <li>Varian 12/512GB: 2.899 yuan (sekitar Rp6,4 juta)</li>
+                <li>Varian 16/512GB: 3.199 yuan (sekitar Rp7 juta)</li>
+                <li>Varian 16GB/1TB: 3.599 yuan (sekitar Rp7,9 juta)</li>
+                <p>Harga keduanya tidak bisa dibandingkan secara langsung mengingat negara tempat penjualannya berbeda. Namun, bila melihat spesifikasinya, Xiaomi 14T Pro lebih unggul dari Redmi K70 Ultra. Jadi, meski terlihat kembar, ternyata smartphone Xiaomi untuk pasar internasional ini dibekali spek yang lebih mumpuni.</p>
+                <p>Sumber : idntimes.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
